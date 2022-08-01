@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: erp-pay
+  cloud:
+    nacos:
+      config:
+        server-addr: 36.7.84.169:8848
+        file-extension: yaml
+        enabled: true
+      discovery:
+        server-addr: 36.7.84.169:8848
+  main:
+    allow-bean-definition-overriding: true
+    loadbalancer:
+      ribbon:
+        enable: false

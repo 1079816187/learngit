@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beimu.pay.mapper.ErpBankRefundResMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.beimu.pay.entity.ErpBankRefundRes">
+        <id column="id" property="id" />
+        <result column="refund_id" property="refundId" />
+        <result column="send_xml" property="sendXml" />
+        <result column="received_xml" property="receivedXml" />
+        <result column="refund_status" property="refundStatus" />
+        <result column="err_msg" property="errMsg" />
+        <result column="refund_time" property="refundTime" />
+        <result column="sale_order_id" property="saleOrderId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, refund_id, send_xml, received_xml, refund_status, err_msg, refund_time, sale_order_id
+    </sql>
+
+</mapper>

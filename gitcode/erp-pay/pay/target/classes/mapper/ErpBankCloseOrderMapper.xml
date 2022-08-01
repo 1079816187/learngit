@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beimu.pay.mapper.ErpBankCloseOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.beimu.pay.entity.ErpBankCloseOrder">
+        <id column="id" property="id" />
+        <result column="sale_order_id" property="saleOrderId" />
+        <result column="pay_id" property="payId" />
+        <result column="create_time" property="createTime" />
+        <result column="bank_res" property="bankRes" />
+        <result column="send_xml" property="sendXml" />
+        <result column="received_xml" property="receivedXml" />
+        <result column="error_log" property="errorLog" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, sale_order_id, pay_id, create_time, bank_res, send_xml, received_xml,error_log
+    </sql>
+
+</mapper>

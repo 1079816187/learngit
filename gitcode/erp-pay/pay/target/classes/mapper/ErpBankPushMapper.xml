@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beimu.pay.mapper.ErpBankPushMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.beimu.pay.entity.ErpBankPush">
+        <id column="id" property="id" />
+        <result column="sale_order_id" property="saleOrderId" />
+        <result column="pay_res_xml" property="payResXml" />
+        <result column="success_flag" property="successFlag" />
+        <result column="pay_time" property="payTime" />
+        <result column="error_log" property="errorLog" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, sale_order_id, pay_res_xml, success_flag, pay_time, error_log
+    </sql>
+
+</mapper>
